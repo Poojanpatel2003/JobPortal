@@ -1,0 +1,16 @@
+<script>start("f:\\Job_portal\\frontend\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("public","public",1,0,"0 B",1737353458,"1/20/25, 11:40:58 AM");</script>
+<script>addRow("src","src",1,0,"0 B",1736499881,"1/10/25, 2:34:41 PM");</script>
+<script>addRow(".gitignore",".gitignore",0,253,"253 B",1735124076,"12/25/24, 4:24:36 PM");</script>
+<script>addRow("bun.lockb","bun.lockb",0,192293,"188 kB",1737112803,"1/17/25, 4:50:03 PM");</script>
+<script>addRow("components.json","components.json",0,441,"441 B",1736353395,"1/8/25, 9:53:15 PM");</script>
+<script>addRow("eslint.config.js","eslint.config.js",0,1003,"1003 B",1735124076,"12/25/24, 4:24:36 PM");</script>
+<script>addRow("index.html","index.html",0,388,"388 B",1737353378,"1/20/25, 11:39:38 AM");</script>
+<script>addRow("jsconfig.json","jsconfig.json",0,119,"119 B",1738687158,"2/4/25, 10:09:18 PM");</script>
+<script>addRow("package-lock.json","package-lock.json",0,150546,"147 kB",1738686189,"2/4/25, 9:53:09 PM");</script>
+<script>addRow("package.json","package.json",0,1515,"1.5 kB",1738686188,"2/4/25, 9:53:08 PM");</script>
+<script>addRow("postcss.config.js","postcss.config.js",0,80,"80 B",1736247075,"1/7/25, 4:21:15 PM");</script>
+<script>addRow("README.md","README.md",0,451,"451 B",1735124076,"12/25/24, 4:24:36 PM");</script>
+<script>addRow("tailwind.config.js","tailwind.config.js",0,1918,"1.9 kB",1736251726,"1/7/25, 5:38:46 PM");</script>
+<script>addRow("vite.config.js","vite.config.js",0,240,"240 B",1736247353,"1/7/25, 4:25:53 PM");</script>

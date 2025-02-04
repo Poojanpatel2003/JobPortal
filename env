@@ -1,0 +1,7 @@
+MONGO_URI=mongodb+srv://poojanpatel1595:8HeJhmeXXvd309wB@cluster0.n6gqt.mongodb.net/
+PORT=8000
+SECRET_KEY=POOJANPATEL
+CLOUD_NAME=dhlxkk4tm
+API_KEY=338442897157163
+API_SECRET=0Y_2OCtCrxTcHMgQt3Req0aoDm8
+NODE_ENV=development

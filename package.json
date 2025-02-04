@@ -1,0 +1,13 @@
+{
+  "name": "job_portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node backend/index.js",
+    "build":"npm install --prefix backend && npm install --prefix frontend --production=false && cd frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
