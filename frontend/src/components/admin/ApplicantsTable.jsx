@@ -48,57 +48,41 @@ import { APPLICATION_API_END_POINT } from "@/utils/constant";
             </TableRow>
           </TableHeader>
           <TableBody>
-            {applicants?.applications?.length > 0 ? (
-              applicants.applications.map((application) => (
-                <TableRow key={application._id}>
-                  <TableCell>{application?.applicant?.fullname || "N/A"}</TableCell>
-                  <TableCell>{application?.applicant?.email || "N/A"}</TableCell>
-                  <TableCell>
-                    {application?.applicant?.phoneNumber || "N/A"}
-                  </TableCell>
-                  <TableCell className="text-blue-600 cursor-pointer">
-                    {application?.applicant?.profile?.resume ? (
-                      <a
-                        href={application.applicant.profile.resume}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {application.applicant.profile.resumeOriginalName ||
-                          "Resume"}
-                      </a>
-                    ) : (
-                      "No Resume"
-                    )}
-                  </TableCell>
-                  <TableCell>
-                    {new Date(application?.createdAt).toLocaleDateString() ||
-                      "N/A"}
-                  </TableCell>
-                  <TableCell className="float-right cursor-pointer">
-                    <Popover>
-                      <PopoverTrigger>
-                        <MoreHorizontal />
-                      </PopoverTrigger>
-                      <PopoverContent className="w-32">
+          {(applicants?.applications?.length ?? 0) > 0 ? (
+    applicants.applications.map((application) => (
+        <TableRow key={application._id}>
+            <TableCell>{application?.applicant?.fullname || "N/A"}</TableCell>
+            <TableCell>{application?.applicant?.email || "N/A"}</TableCell>
+            <TableCell>{application?.applicant?.phoneNumber || "N/A"}</TableCell>
+            <TableCell className="text-blue-600 cursor-pointer">
+                {application?.applicant?.profile?.resume ? (
+                    <a href={application.applicant.profile.resume} target="_blank" rel="noopener noreferrer">
+                        {application.applicant.profile.resumeOriginalName || "Resume"}
+                    </a>
+                ) : "No Resume"}
+            </TableCell>
+            <TableCell>{new Date(application?.createdAt).toLocaleDateString() || "N/A"}</TableCell>
+            <TableCell className="float-right cursor-pointer">
+                <Popover>
+                    <PopoverTrigger><MoreHorizontal /></PopoverTrigger>
+                    <PopoverContent className="w-32">
                         {shortListingStatus.map((status, index) => (
-                          <div
-                          onClick={()=>statusHandler(status,application?._id)}
-                            key={index}
-                            className="flex w-fit items-center my-2 mx-8 cursor-pointer"
-                          >
-                            <span>{status}</span>
-                          </div>
+                            <div key={index} className="flex w-fit items-center my-2 mx-8 cursor-pointer"
+                                onClick={() => statusHandler(status, application?._id)}>
+                                <span>{status}</span>
+                            </div>
                         ))}
-                      </PopoverContent>
-                    </Popover>
-                  </TableCell>
-                </TableRow>
-              ))
-            ) : (
-              <TableRow>
-                <TableCell colSpan={6}>No applications found.</TableCell>
-              </TableRow>
-            )}
+                    </PopoverContent>
+                </Popover>
+            </TableCell>
+        </TableRow>
+    ))
+) : (
+    <TableRow>
+        <TableCell colSpan={6}>No applications found.</TableCell>
+    </TableRow>
+)}
+
           </TableBody>
         </Table>
       </div>
