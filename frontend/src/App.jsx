@@ -72,7 +72,7 @@ const appRouter=createBrowserRouter([
   },
   {
     path:'*',
-    element:<Home/>
+    element: <Navigate to="/" />
   },
 ])
 function App(){
