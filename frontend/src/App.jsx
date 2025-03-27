@@ -14,7 +14,6 @@ import AdminJobs from "./components/admin/AdminJobs";
 import PostJob from "./components/admin/PostJob";
 import Applicants from "./components/admin/Applicants";
 import ProtectedRoute from "./components/admin/ProtectedRoute";
-import NotFound from "./components/NotFound";  // Custom 404 page
 
 const appRouter = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -35,8 +34,6 @@ const appRouter = createBrowserRouter([
 
   // Fallback route
   { path: "*", element: <Navigate to="/" /> }   // Redirects to Home
-  // OR show a custom 404 page:
-  // { path: "*", element: <NotFound /> }
 ]);
 
 function App() {
