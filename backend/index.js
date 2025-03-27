@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOption = {
-    origin: ["http://localhost:5173", "https://jobportal-psqj.onrender.com"],  // Add Render URL
+    origin: ["http://localhost:5173"],  // Add Render URL
     credentials: true
 };
 app.use(cors(corsOption));
